@@ -1,23 +1,11 @@
 # MechaCar_Statistical_Analysis
 
-
-
-
-
 ![image](https://user-images.githubusercontent.com/70987568/136718493-9bd53b9f-5d49-488b-8da5-35d210f22c03.png)
 
-## Coefficients:
-    
-    (Intercept)    vehicle_length    vehicle_weight     spoiler_angle  ground_clearance               AWD  
-      -1.040e+02         6.267e+00         1.245e-03         6.877e-02         3.546e+00        -3.411e+00  
-
-
-Residuals:
-     Min       1Q   Median       3Q      Max 
--19.4701  -4.4994  -0.0692   5.4433  18.5849 
 
 ## Head(Sus_Coil) # dataFrame of suspension coils
-  VehicleID Manufacturing_Lot  PSI
+
+VehicleID Manufacturing_Lot  PSI
 1    V40858              Lot1 1499
 2    V40607              Lot1 1500
 3    V31443              Lot1 1500
@@ -26,6 +14,7 @@ Residuals:
 6    V17344              Lot1 1501
 
 ## Total_summary 
+
      Mean Median Variance       SD
 1 1498.78   1500 62.29356 7.892627
 
