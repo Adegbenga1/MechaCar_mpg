@@ -6,12 +6,24 @@ library(tidyverse)
 MechaCar_mpg <- read.csv('MechaCar_mpg.csv',check.names = F,stringsAsFactors = F) #import MechaCar_mpg  dataset
 head(MechaCar_mpg)
 # Linear model of MPG
-lm(vehicle_length ~ mpg + vehicle_length + vehicle_weight + spoiler_angle + ground_clearance,data=MechaCar_mpg) #generate multiple linear regression model
-summary(lm(vehicle_length ~ mpg + vehicle_length + vehicle_weight + spoiler_angle + ground_clearance,data=MechaCar_mpg)) #generate multiple linear regression model
+lm(formula =  mpg ~ vehicle_length + vehicle_weight + spoiler_angle + ground_clearance + AWD, data = MechaCar_mpg) #generate multiple linear regression model
+summary(lm(formula =  mpg ~ vehicle_length + vehicle_weight + spoiler_angle + ground_clearance + AWD, data = MechaCar_mpg)) #generate multiple linear regression model
 
 # Deliverable 2: Create Visualizations for the Trip Analysis
 Sus_Coil <- read.csv('Suspension_Coil.csv',check.names = F,stringsAsFactors = F) #import Suspension_Coil dataset
 head(Sus_Coil) # dataFrame of suspension coils
+
+
+Total_summary <- Sus_Coil %>% summarize(Mean=mean(PSI), Median=median(PSI), Variance=var(PSI), SD=sd(PSI), .groups = 'keep')
+head(Total_summary )
+
+
+
+
+# create a lot summary dataFrame that has the mean, median, variance, and standard deviation for each manufacturing lot
+
+lot_summary  <- Sus_Coil %>% group_by(Manufacturing_Lot) %>% summarize(Mean_PSI=mean(PSI), .groups = 'keep') #create summary table
+lot_summaryStat <- Sus_Coil %>% group_by( Manufacturing_Lot) %>% summarize(Mean_PSI=mean(PSI),Median_PSI=median(PSI), Variance_PSI=var(PSI), SD_PSI=sd(PSI), .groups = 'keep')
 
 # create a lot summary dataFrame that has the mean, median, variance, and standard deviation for each manufacturing lot
 lot_summary  <- Sus_Coil %>% group_by(Manufacturing_Lot) %>% summarize(Mean_PSI=mean(PSI), .groups = 'keep') #create summary table
