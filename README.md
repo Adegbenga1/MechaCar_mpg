@@ -33,6 +33,12 @@ alternative hypothesis: true mean is not equal to 1500
 sample estimates:
 mean of x 
      1500 
+     
+## Result for LOT 1
+
+The results of the t-test to test if the PSI mean for Lot1 is statistically different from the population mean of 1,500 pounds
+per square inch show that, at a 95% confidence level, the two means are not statistically different. 
+The p-value of 1 shows that the mean for Lot1 is exactly the same same as the population mean of 1500 PSI.
 
 ## Lot2 Suspension Coil T-Test:
 
@@ -44,6 +50,13 @@ alternative hypothesis: true mean is not equal to 1500
 sample estimates:
 mean of x 
    1500.2 
+## Result for LOT 2 
+
+The t-test showed that PSI mean for Lot2 is statistically different from the population mean of 1,500 
+pounds per square inch show that, at a 95% confidence level, the two means are not statistically 
+different. Because the p-value of 0.6072 is higher than the critical value of 0.05,we accept null
+hypothesis because no difference between the means of the PSI for the population and Lot2. 
+
 
 ##  Lot3 Suspension Coil T-Test:
 
@@ -55,3 +68,9 @@ alternative hypothesis: true mean is not equal to 1500
 sample estimates:
 mean of x 
   1496.14 
+## Result for Lot 3 
+PSI mean for Lot3 is statistically different from the population mean of 1,500 pounds per square inch show that,
+at a 95% confidence level, the two means are statistically different. The p-value of 0.04168 is lower than the
+critical value of 0.05, the null hypothesis should be rejected in that there is a difference between the means 
+of the PSI for the population and Lot3 and the true mean is not equal to 1500. 
+The means within the 95% confidence range are between 1492.431 and 1499.849 PSI.
