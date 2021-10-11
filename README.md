@@ -18,8 +18,8 @@ VehicleID Manufacturing_Lot  PSI
 
 ## Total_summary 
 
-     Mean Median Variance       SD
-1 1498.78   1500 62.29356 7.892627
+Mean           Median       Variance            SD
+1 1498.78      1500         62.29356            7.892627
 
 ## Deliverable 3: t.tests on suspension coils
 
