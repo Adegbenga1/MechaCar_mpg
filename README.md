@@ -8,13 +8,15 @@
 
 ## Head(Sus_Coil) # dataFrame of suspension coils
 
-VehicleID Manufacturing_Lot  PSI
-1    V40858              Lot1 1499
-2    V40607              Lot1 1500
-3    V31443              Lot1 1500
-4     V6004              Lot1 1500
-5     V7000              Lot1 1501
-6    V17344              Lot1 1501
+VehicleID	Manufacturing_Lot	PSI
+1	V40858	Lot11499
+2	V40607	Lot11500
+3	V31443	Lot11500
+4	V6004	Lot11500
+5	V7000	Lot11501
+6	V17344	Lot11501
+![image](https://user-images.githubusercontent.com/70987568/136720885-66a474be-2c3b-4b0d-b5ba-5222190a5b52.png)
+
 
 ## Total_summary 
 
