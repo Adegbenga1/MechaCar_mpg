@@ -15,7 +15,6 @@ VehicleID	Manufacturing_Lot	PSI
 4	V6004	Lot11500
 5	V7000	Lot11501
 6	V17344	Lot11501
-![image](https://user-images.githubusercontent.com/70987568/136720885-66a474be-2c3b-4b0d-b5ba-5222190a5b52.png)
 
 
 ## Total_summary 
